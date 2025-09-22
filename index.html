@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produits Agricoles Frais</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🌱 Marché Local</h1>
+    <p>Des produits frais directement du producteur au consommateur</p>
+  </header>
+
+  <main>
+    <!-- ✅ Produits chargés depuis Google Sheets -->
+    <section class="products" id="products">
+      <p>Chargement des produits...</p>
+    </section>
+
+    <!-- ✅ Panier + Formulaire de commande -->
+    <aside class="cart">
+      <h2>🛒 Mon panier</h2>
+      <ul id="cart-items"></ul>
+      <p>Total : <span id="total">0</span> CFA</p>
+
+      <h3>Formulaire de commande</h3>
+      <form id="order-form" onsubmit="sendOrder(event)">
+        <input type="text" id="name" placeholder="Nom complet" required><br>
+        <input type="tel" id="phone" placeholder="Téléphone" required><br>
+        <textarea id="address" placeholder="Adresse de livraison" required></textarea><br>
+        <button type="submit">✅ Valider la commande</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 Marché Local - Produits frais du Sénégal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
