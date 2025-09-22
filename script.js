@@ -73,7 +73,7 @@ function sendOrder(event) {
   orderDetails += "\n💰 Total: " + total + " CFA";
 
   // ✅ Envoi WhatsApp
-  let phoneNumber = "221770000000"; // Mets ton numéro WhatsApp ici
+  let phoneNumber = "221771168451"; // Mets ton numéro WhatsApp ici
   let whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(orderDetails);
 
   window.open(whatsappUrl, "_blank");
